@@ -1,3 +1,4 @@
-<p>
-  posts-list works!
-</p>
+<h1>list des posts</h1>
+<ul *ngFor='let p of data | slice:1:10'>
+  <li>{{p.userId}}-{{p.body}}--{{p.title}} </li>
+</ul>
